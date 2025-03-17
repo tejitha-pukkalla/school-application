@@ -23,7 +23,7 @@ const Dashboard = () => {
         <div className="welcome-card">
           <h2>Dashboard</h2>
           <p>You are logged in as <strong>{currentUser.email}</strong></p>
-          <p>Role: <strong>{currentUser.role}</strong></p>
+          {/* <p>Role: <strong>{currentUser.role}</strong></p> */}
         </div>
         
         <div className="dashboard-grid">
@@ -33,8 +33,8 @@ const Dashboard = () => {
               <div className="card-content">
                 <p><strong>Name:</strong> {currentUser.name}</p>
                 <p><strong>Email:</strong> {currentUser.email}</p>
-                <p><strong>User ID:</strong> {currentUser.id}</p>
-                <p><strong>Account Type:</strong> {currentUser.role}</p>
+                {/* <p><strong>User ID:</strong> {currentUser.id}</p>
+                <p><strong>Account Type:</strong> {currentUser.role}</p> */}
               </div>
             </div>
           </div>
@@ -54,6 +54,8 @@ const Dashboard = () => {
               <h3 className="card-title">Quick Actions</h3>
               <div className="card-content">
                 <button className="btn btn-primary">Edit Profile</button>
+                </div>
+                <div>
                 <button className="btn btn-outline mt-2">Change Password</button>
               </div>
             </div>
